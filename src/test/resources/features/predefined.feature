@@ -24,14 +24,14 @@ Feature: Smoke steps
     Then element with xpath "//div[@id='results']" should contain text "cucumber"
 
 
- @predefined3
-    Scenario: Predefined steps for Bing
-        Given I open url "https://Bing.com"
-        Then I should see page title as "Bing"
-        Then element with xpath "//input[@name='q']" should be present
-        When I type "Behavior Driven Development" into element with xpath "//input[@name='q']"
-        Then I wait for 2 sec
-        Then I click on element using JavaScript with xpath "//*[@type='submit']"
-        Then I wait for element with xpath "//*[@id='b_results']" to be present
-        Then element with xpath "//*[@id='b_results']" should contain text "Cucumber"
-        Then I wait for 2 sec
+  @predefined3
+  Scenario: Predefined steps for Bing
+    Given I open url "https://Bing.com"
+    Then I should see page title as "Bing"
+    Then element with xpath "//input[@name='q']" should be present
+    When I type "Behavior Driven Development" into element with xpath "//input[@name='q']"
+    Then I wait for 2 sec
+    Then I click on element using JavaScript with xpath "//*[@type='submit']"
+    Then I wait for element with xpath "//*[@id='b_results']" to be present
+    Then element with xpath "//*[@id='b_results']" should contain text "Cucumber"
+    Then I wait for 2 sec
